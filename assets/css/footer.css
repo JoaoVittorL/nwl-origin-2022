@@ -1,0 +1,46 @@
+footer{
+    background: var(--primary-color);
+    padding-block:6rem ;
+
+    text-align: left;
+
+    color: var(--white);
+}
+footer .logo{
+    display: inline-block;
+    margin-bottom: 2.4rem;
+}
+footer .logo svg{
+    width:23.6rem;
+    height: 3.1rem;
+}
+footer .logo path{
+    fill: white;
+}
+footer p{
+    color: var(--primary-brand-beige);
+    line-height: 2;
+
+    margin-bottom: 3.2rem;
+}
+footer .social-links{
+    justify-content: flex-start;
+}
+/* Back to top button*/
+
+#backToTopButton{
+    position: fixed;
+    bottom: 1rem;
+    right: 2.5rem;
+
+    opacity: 0;
+    visibility: hidden;
+    
+    transform: translateY(100%);
+    transition: 200ms;
+}
+#backToTopButton.show{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
